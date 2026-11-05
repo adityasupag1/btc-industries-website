@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BTC Designs</title>
+<style>body{margin:0;font-family:system-ui,sans-serif;background:#f3f5f1}
+.bar{display:flex;gap:8px;align-items:center;padding:10px 16px;background:#0a2a1b;color:#fff;flex-wrap:wrap}
+.bar b{margin-right:10px}.bar button{padding:8px 14px;border:1px solid #9cc22c;background:none;color:#fff;cursor:pointer;font:inherit}
+.bar button.on{background:#9cc22c;color:#0a2a1b;font-weight:600}
+iframe{width:100%;height:calc(100vh - 52px);border:0;display:block;background:#fff}</style></head>
+<body><div class="bar"><b>BTC Industries · Design versions</b>
+<button data-f="design-4-corporate.html" class="on">Design 4 · Corporate (current)</button>
+<button data-f="design-3-bold-industrial.html">Design 3 · Bold industrial</button></div>
+<iframe id="f" src="design-4-corporate.html"></iframe>
+<script>document.querySelectorAll('button').forEach(b=>b.onclick=()=>{document.querySelectorAll('button').forEach(x=>x.classList.remove('on'));b.classList.add('on');f.src=b.dataset.f})</script>
+</body></html>
