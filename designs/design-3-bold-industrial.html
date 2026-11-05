@@ -291,7 +291,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
     <div class="tag">Contact</div>
     <h2>Let's talk business</h2>
     <div class="cline"><small>Phone / WhatsApp</small><a href="tel:+917482811011">+91 74828 11011</a></div>
-    <div class="cline"><small>Email</small><a href="mailto:btcindustries1@gmail.com">btcindustries1@gmail.com</a></div>
+    <div class="cline"><small>Email</small><a href="mailto:btcindustries01@gmail.com">btcindustries01@gmail.com</a></div>
     <div class="cline"><small>Location</small><span>Siwan, Bihar, India</span></div>
   </div>
   <div class="cright">
@@ -319,7 +319,7 @@ document.querySelectorAll('nav a').forEach(a=>a.onclick=()=>a.closest('ul').clas
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 function send(ev){ev.preventDefault();const f=ev.target,enc=encodeURIComponent;
-  location.href='mailto:btcindustries1@gmail.com?subject='+enc(f.t.value+' — website')+'&body='+enc('Name: '+f.n.value+'\nEmail: '+f.e.value+'\nPhone: '+f.p.value+'\n\n'+f.m.value);
+  location.href='mailto:btcindustries01@gmail.com?subject='+enc(f.t.value+' — website')+'&body='+enc('Name: '+f.n.value+'\nEmail: '+f.e.value+'\nPhone: '+f.p.value+'\n\n'+f.m.value);
   ok.style.display='block';return false}
 </script>
 </body>
